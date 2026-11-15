@@ -1,0 +1,14 @@
+{
+  "name": "anki-sk-studio",
+  "owner": {
+    "name": "SK"
+  },
+  "plugins": [
+    {
+      "name": "anki-sk-studio",
+      "source": "./",
+      "description": "Anki card builder + SK card designer skills"
+    }
+  ],
+  "description": "Anki flashcard skills for students: build exam-focused cards from your own material, and restyle any deck in the SK design."
+}

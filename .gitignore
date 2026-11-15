@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*_report.csv
+.DS_Store
+# never commit personal study material
+private/

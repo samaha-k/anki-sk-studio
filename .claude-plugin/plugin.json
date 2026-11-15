@@ -1,0 +1,17 @@
+{
+  "name": "anki-sk-studio",
+  "description": "Make exam-focused Anki flashcards from your own notes and past papers, and turn any Anki deck into the SK card design (subject colours, self-test boxes, comparison tables, memory hooks, dark mode), without losing your progress.",
+  "version": "1.0.0",
+  "author": {
+    "name": "SK"
+  },
+  "keywords": [
+    "anki",
+    "flashcards",
+    "medical-students",
+    "spaced-repetition",
+    "study"
+  ],
+  "license": "MIT",
+  "icon": ".claude-plugin/icon.png"
+}
