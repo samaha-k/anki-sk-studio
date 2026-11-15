@@ -1,0 +1,27 @@
+<div class="sv sv-back" id="sv-back" data-subj="{{Subject}}">
+  <header class="band">
+    <div class="subj"><span class="ic si"></span><div class="txt"><span class="crumb">%%LABEL%%</span><span class="sname">{{Subject}}</span></div></div>
+    <div class="badges">{{#Source}}<span class="badge src-{{Source}}"></span>{{/Source}}{{#Asked}}<span class="badge fire">🔥 Exam favourite</span>{{/Asked}}{{#Extra}}<span class="badge bonus">✦ Bonus</span>{{/Extra}}</div>
+  </header>
+  <main class="ans">
+    <div class="qmini">
+      <span class="tchip"><span class="ic ic-{{Icon}}"></span></span>
+      <h2 class="qtext">{{Question}}</h2>
+    </div>
+    <div class="tools"><span class="dots" data-n="{{Count}}"></span><span><span class="num">{{Count}}</span> key points</span><span class="hint">· tap a box to hide / reveal it</span><button type="button" class="btn" id="sv-toggle">Hide all</button></div>
+    {{#Compare}}<div class="cmpwrap">{{Compare}}</div>{{/Compare}}
+    {{^Compare}}<div class="points"></div>{{/Compare}}
+    <div class="raw">{{Points}}</div>
+    <div class="lower">
+      {{#Hook}}<aside class="hook"><span class="lbl">🔑 MEMORY HOOK</span>{{Hook}}</aside>{{/Hook}}
+      {{#Diagram}}<figure class="dia"><div class="frame">{{Diagram}}</div><figcaption>🔍 Tap picture to view full screen</figcaption></figure>{{/Diagram}}
+    </div>
+  </main>
+  <footer class="brand"><span class="mono">SK</span><span class="bname">%%BRAND%%</span></footer>
+  <span class="sv-topic" hidden>{{Topic}}</span>
+  <span class="sv-formula" hidden>{{Formula}}</span>
+</div>
+<script>
+/*SHARED_JS*/
+svInit(document.getElementById('sv-back'), '●');
+</script>

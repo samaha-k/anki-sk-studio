@@ -1,0 +1,19 @@
+<div class="sv sv-front" id="sv-front" data-subj="{{Subject}}">
+  <header class="band">
+    <div class="subj"><span class="ic si"></span><div class="txt"><span class="crumb">%%LABEL%%</span><span class="sname">{{Subject}}</span></div></div>
+    <div class="badges">{{#Source}}<span class="badge src-{{Source}}"></span>{{/Source}}{{#Asked}}<span class="badge fire">🔥 Exam favourite</span>{{/Asked}}{{#Extra}}<span class="badge bonus">✦ Bonus</span>{{/Extra}}</div>
+  </header>
+  <main class="stage">
+    <div class="qrow">
+      <span class="tchip"><span class="ic ic-{{Icon}}"></span></span>
+      <h1 class="qtext">{{Question}}</h1>
+    </div>
+    <div class="recall"><span class="dots" data-n="{{Count}}"></span><span><span class="num">{{Count}}</span> key points to recall</span></div>
+  </main>
+  <footer class="brand"><span class="mono">SK</span><span class="bname">%%BRAND%%</span></footer>
+  <span class="sv-topic" hidden>{{Topic}}</span>
+</div>
+<script>
+/*SHARED_JS*/
+svInit(document.getElementById('sv-front'), '○');
+</script>

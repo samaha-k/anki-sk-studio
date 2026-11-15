@@ -18,14 +18,19 @@ Two [Claude](https://claude.ai) skills, made by a medical student who would rath
 </p>
 
 ## Install
+Pick the one that matches how you use Claude:
 
-**Claude Code** (desktop app, terminal or web):
+**1. Claude Code on the web or phone (claude.ai/code):** start a new session and **select this repository** (`samaha-k/anki-sk-studio`). The skills in `.claude/skills/` load automatically. Then attach your deck or notes and ask.
+
+**2. Claude Code on a computer (desktop app or terminal):**
 ```
 /plugin marketplace add samaha-k/anki-sk-studio
 /plugin install anki-sk-studio@anki-sk-studio
 ```
 
-**Claude.ai:** download the two ready-made zips in [`dist/`](dist) and upload them in **Settings → Capabilities → Skills** (code execution must be on). *Tested in Claude Code so far; Claude.ai testing is still to come. Please open an issue if something fails.*
+**3. Claude.ai chat:** download the two zips in [`dist/`](dist) and upload them in **Settings → Capabilities → Skills** (code execution must be on).
+
+*Tested in Claude Code so far. Please open an issue if something fails.*
 
 ## Use it
 Just ask Claude, for example:
