@@ -101,9 +101,9 @@ def parse_split(f):
 def parse_frontback(front, back):
     """Shapes 2 and 3."""
     v = {k: "" for k in FIELDS}
-    m = re.match(r"^\[(UQ|HY)\]\s*(.*?)\s*(\[extra\])?\s*$", front, re.S)
-    if m:
-        v["Source"], v["Question"], v["Extra"] = m.group(1), m.group(2), m.group(3) or ""
+    m = re.match(r"^(?:\[(UQ|HY)\]\s*)?(.*?)\s*(\[extra\])?\s*$", front, re.S)
+    if m and (m.group(1) or m.group(3)):
+        v["Source"], v["Question"], v["Extra"] = m.group(1) or "", m.group(2), m.group(3) or ""
     else:
         v["Question"] = front
     lis = re.findall(r"(?s)<li[^>]*>(.*?)</li>", back)
